@@ -1,0 +1,34 @@
+.section {
+	padding: 80px 0;
+	background-color: #222822; /* Чуть светлее основного фона для выделения */
+}
+
+.card {
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 15px;
+	padding: 30px;
+	height: 100%; /* Чтобы карточки были одинаковой высоты */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.author {
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	color: #a3c1ad; /* Наш зеленый акцент */
+	margin-bottom: 15px;
+}
+
+.text {
+	font-size: 15px;
+	line-height: 1.7;
+	color: #ddd;
+	font-style: italic;
+}
+
+.swiperWrapper {
+	padding-bottom: 50px; /* Место для точек пагинации */
+	margin-top: 40px;
+}

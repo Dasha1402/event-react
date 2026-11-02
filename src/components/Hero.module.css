@@ -1,0 +1,54 @@
+.hero {
+	background-image: url('/img/baner_2.webp'); /* Используем твою картинку */
+	background-size: cover;
+	background-position: center;
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+
+	/* Затемнение фона, чтобы текст читался лучше (как на твоем скриншоте) */
+	.hero::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(26, 31, 26, 0.5);
+		z-index: 1;
+	}
+
+.heroContent {
+	max-width: 800px;
+	position: relative;
+	z-index: 2;
+}
+
+.heroTitle {
+	font-size: 80px;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.heroSubtitle {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.heroText {
+	font-size: 18px;
+	margin-bottom: 30px;
+	color: #ddd;
+}
+
+.heroButtons {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	margin-top: 30px;
+}

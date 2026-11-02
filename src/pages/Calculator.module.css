@@ -1,0 +1,179 @@
+.container {
+	min-height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 20px;
+}
+
+.calcBox {
+	background: #1e231e; /* Темный фон карточки */
+	width: 100%;
+	max-width: 600px;
+	border-radius: 20px;
+	padding: 40px;
+	border: 1px solid rgba(163, 193, 173, 0.2);
+	position: relative;
+	overflow: hidden;
+}
+
+/* Прогресс бар */
+.progressBar {
+	height: 6px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 3px;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.progressFill {
+	height: 100%;
+	background: #a3c1ad;
+	transition: width 0.4s ease;
+}
+
+.stepTitle {
+	text-align: center;
+	font-size: 14px;
+	color: #a3c1ad;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.question {
+	text-align: center;
+	font-size: 28px;
+	font-family: 'Playfair Display', serif;
+	margin-bottom: 30px;
+}
+
+/* Варианты ответов */
+.options {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-bottom: 30px;
+}
+
+.label {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 15px 20px;
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+	.label:hover {
+		background: rgba(255, 255, 255, 0.08);
+	}
+
+	.label input[type="radio"],
+	.label input[type="checkbox"] {
+		accent-color: #a3c1ad;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+	}
+
+	.label.active {
+		border-color: #a3c1ad;
+		background: rgba(163, 193, 173, 0.1);
+	}
+
+/* Инпут даты */
+.dateInput {
+	width: 100%;
+	padding: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+	color: white;
+	font-family: inherit;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+	.dateInput::-webkit-calendar-picker-indicator {
+		filter: invert(1);
+		cursor: pointer;
+	}
+
+/* Кнопки навигации */
+.navButtons {
+	display: flex;
+	gap: 15px;
+}
+
+.btnBack {
+	flex: 1;
+	padding: 15px;
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+
+	.btnBack:hover {
+		background: rgba(255, 255, 255, 0.1);
+	}
+
+.btnNext {
+	flex: 2;
+	padding: 15px;
+	background: #a3c1ad;
+	color: #1a1f1a;
+	border: none;
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+	.btnNext:hover {
+		background: #8fae9a;
+	}
+
+	.btnNext:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+
+/* Экран результата */
+.resultBox {
+	text-align: center;
+}
+
+.resultTitle {
+	font-size: 18px;
+	color: #ccc;
+	margin-bottom: 10px;
+}
+
+.priceRange {
+	font-size: 42px;
+	font-family: 'Playfair Display', serif;
+	color: #a3c1ad;
+	margin-bottom: 20px;
+}
+
+.phoneInput {
+	width: 100%;
+	padding: 15px;
+	border-radius: 30px;
+	border: none;
+	background: white;
+	color: #333;
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 15px;
+}
